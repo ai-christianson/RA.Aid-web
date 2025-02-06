@@ -6,8 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["DM Sans", "system-ui", "sans-serif"],
-        display: ["DM Sans", "system-ui", "sans-serif"],
+        sans: ["Space Grotesk", "system-ui", "sans-serif"],
+        display: ["Space Grotesk", "system-ui", "sans-serif"],
+      },
+      letterSpacing: {
+        'brand': '-0.03em',
       },
       borderRadius: {
         lg: "var(--radius)",
