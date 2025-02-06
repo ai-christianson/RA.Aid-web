@@ -70,7 +70,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-bold">Powerful Features</h2>
-              <p className="mt-4 text-muted-foreground">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Everything you need to develop software autonomously, powered by state-of-the-art AI.
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="text-3xl font-bold">Quick Start Guide</h2>
-              <p className="mt-4 text-muted-foreground">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Get up and running with RA.Aid in minutes.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 Connect with other developers, get help, and contribute to the future of autonomous development.
               </p>
 

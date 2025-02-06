@@ -13,13 +13,13 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#features" className="text-sm hover:text-primary transition-colors">
+          <a href="#features" className="text-base hover:text-primary transition-colors">
             Features
           </a>
-          <a href="#quickstart" className="text-sm hover:text-primary transition-colors">
+          <a href="#quickstart" className="text-base hover:text-primary transition-colors">
             Quick Start
           </a>
-          <a href="#community" className="text-sm hover:text-primary transition-colors">
+          <a href="#community" className="text-base hover:text-primary transition-colors">
             Community
           </a>
         </nav>
