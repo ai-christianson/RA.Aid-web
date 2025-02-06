@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
             <img 
-              src="/assets/logo.svg" 
+              src="/assets/logo-white-transparent.gif" 
               alt="RA.Aid Logo"
               className="h-8 w-auto"
             />

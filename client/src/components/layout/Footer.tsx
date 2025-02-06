@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <img 
-                src="/assets/logo.svg" 
+                src="/assets/logo-white-transparent.gif" 
                 alt="RA.Aid Logo"
                 className="h-8 w-auto"
               />
