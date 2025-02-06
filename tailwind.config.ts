@@ -6,10 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Space Grotesk", "system-ui", "sans-serif"],
-        display: ["Space Grotesk", "system-ui", "sans-serif"],
+        sans: ["Satoshi", "system-ui", "sans-serif"],
+        display: ["Satoshi", "system-ui", "sans-serif"],
       },
       letterSpacing: {
+        'tight': '-0.02em',
         'brand': '-0.03em',
       },
       borderRadius: {

@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="min-h-[90vh] flex flex-col justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background -z-10" />
-      
+
       <div className="container mx-auto px-4 pt-20">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -22,8 +22,8 @@ export default function Hero() {
               Autonomously
             </span>
           </h1>
-          
-          <p className="mt-6 text-xl text-muted-foreground">
+
+          <p className="mt-6 text-xl text-muted-foreground font-normal tracking-tight">
             RA.Aid is an open-source AI assistant that combines research, planning, and implementation
             to help you build software faster and smarter.
           </p>
@@ -32,7 +32,7 @@ export default function Hero() {
             <Button size="lg" asChild>
               <a href="#quickstart">Get Started</a>
             </Button>
-            
+
             <Button size="lg" variant="outline" asChild>
               <a
                 href="https://github.com/ai-christianson/RA.Aid"
@@ -48,7 +48,7 @@ export default function Hero() {
 
           <div className="mt-16 flex items-center justify-center gap-8 text-muted-foreground">
             <a
-              href="https://discord.gg/your-invite"
+              href="https://discord.gg/f6wYbzHYxV"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
@@ -56,9 +56,9 @@ export default function Hero() {
               <SiDiscord className="h-6 w-6" />
               <span>Join Discord</span>
             </a>
-            
+
             <div className="h-4 w-px bg-border" />
-            
+
             <span className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-green-500" />
               Apache 2.0 License
