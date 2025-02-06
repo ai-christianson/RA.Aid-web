@@ -7,12 +7,11 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {/* Replace with actual logo */}
-          <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+          <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-display">
             RA.Aid
           </span>
         </div>
-        
+
         <nav className="hidden md:flex items-center gap-6">
           <a href="#features" className="text-sm hover:text-primary transition-colors">
             Features
@@ -28,7 +27,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="icon" asChild>
             <a 
-              href="https://discord.gg/your-invite" 
+              href="https://discord.gg/f6wYbzHYxV" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary"

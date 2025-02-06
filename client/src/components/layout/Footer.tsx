@@ -18,14 +18,21 @@ export default function Footer() {
             <h4 className="font-medium mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary">Documentation</a>
+                <a 
+                  href="https://github.com/ai-christianson/RA.Aid"
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  Documentation
+                </a>
               </li>
+              {/* Uncomment when available
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary">API Reference</a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary">Examples</a>
               </li>
+              */}
             </ul>
           </div>
 
@@ -45,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://discord.gg/your-invite"
+                  href="https://discord.gg/f6wYbzHYxV"
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-2"
@@ -61,20 +68,21 @@ export default function Footer() {
             <h4 className="font-medium mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary">License</a>
+                <a 
+                  href="https://github.com/ai-christianson/RA.Aid/blob/master/LICENSE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  License
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} RA.Aid. Released under the Apache License 2.0.</p>
+          <p>© {new Date().getFullYear()} AI Christianson. Released under the Apache License 2.0.</p>
         </div>
       </div>
     </footer>
