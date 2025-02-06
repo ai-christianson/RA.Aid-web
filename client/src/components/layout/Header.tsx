@@ -7,9 +7,13 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-brand bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-display">
-            RA.Aid
-          </span>
+          <a href="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <img 
+              src="/assets/logo.svg" 
+              alt="RA.Aid Logo"
+              className="h-8 w-auto"
+            />
+          </a>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">

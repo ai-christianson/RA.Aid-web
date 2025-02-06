@@ -8,7 +8,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">RA.Aid</h3>
+            <div className="flex items-center">
+              <img 
+                src="/assets/logo.svg" 
+                alt="RA.Aid Logo"
+                className="h-8 w-auto"
+              />
+            </div>
             <p className="text-base text-muted-foreground">
               Open-source autonomous software development assistant powered by AI.
             </p>
@@ -25,14 +31,6 @@ export default function Footer() {
                   Documentation
                 </a>
               </li>
-              {/* Uncomment when available
-              <li>
-                <a href="#" className="text-base text-muted-foreground hover:text-primary">API Reference</a>
-              </li>
-              <li>
-                <a href="#" className="text-base text-muted-foreground hover:text-primary">Examples</a>
-              </li>
-              */}
             </ul>
           </div>
 
@@ -81,7 +79,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t text-center text-base text-muted-foreground"> {/*Increased text size here*/}
+        <div className="mt-12 pt-8 border-t text-center text-base text-muted-foreground">
           <p>© {new Date().getFullYear()} AI Christianson. Released under the Apache License 2.0.</p>
         </div>
       </div>
