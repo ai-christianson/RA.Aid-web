@@ -2,14 +2,16 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { SiDiscord } from "react-icons/si";
+import AnimatedBackground from "./AnimatedBackground";
 
 export default function Hero() {
   return (
     <div className="min-h-[90vh] flex flex-col justify-center relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background -z-10" />
+      {/* Animated background */}
+      <AnimatedBackground />
 
-      <div className="container mx-auto px-4 pt-20">
+      {/* Content overlay */}
+      <div className="container mx-auto px-4 pt-20 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
