@@ -13,13 +13,8 @@ brew install ra-aid`,
   },
   {
     title: "Set up API keys",
-    code: `# For OpenAI models (required for default expert model o1)
-export OPENAI_API_KEY=your_api_key_here
-
-# For Anthropic Claude models
-export ANTHROPIC_API_KEY=your_api_key_here
-
-# For Tavily web search
+    code: `export ANTHROPIC_API_KEY=your_api_key_here
+export OPENAI_API_KEY=your_api_key_here # required for expert model o1
 export TAVILY_API_KEY=your_api_key_here`,
   },
   {
