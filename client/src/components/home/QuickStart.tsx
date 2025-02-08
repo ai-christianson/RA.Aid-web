@@ -13,7 +13,10 @@ brew install ra-aid`,
   },
   {
     title: "Set up API keys",
-    code: `# For Anthropic Claude models (recommended)
+    code: `# For OpenAI models (required for default expert model o1)
+export OPENAI_API_KEY=your_api_key_here
+
+# For Anthropic Claude models
 export ANTHROPIC_API_KEY=your_api_key_here
 
 # For Tavily web search
@@ -50,7 +53,7 @@ export default function QuickStart() {
                 <h3 className="text-lg font-semibold mb-4">{INSTALLATION_STEPS[0].title}</h3>
                 <Tabs defaultValue="pip" className="w-full">
                   <TabsList className="w-full grid grid-cols-2 mb-4">
-                    <TabsTrigger value="pip">pip (Recommended)</TabsTrigger>
+                    <TabsTrigger value="pip">pip</TabsTrigger>
                     <TabsTrigger value="mac">macOS</TabsTrigger>
                   </TabsList>
                   <TabsContent value="pip">
