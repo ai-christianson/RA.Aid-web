@@ -14,8 +14,8 @@ brew install ra-aid`,
   {
     title: "Set up API keys",
     code: `export ANTHROPIC_API_KEY=your_api_key_here
-export OPENAI_API_KEY=your_api_key_here # required for expert model o1
-export TAVILY_API_KEY=your_api_key_here # optional, required for web research`,
+export OPENAI_API_KEY=your_api_key_here # optional, used for expert model o1
+export TAVILY_API_KEY=your_api_key_here # optional, used for web research`,
   },
   {
     title: "Start developing",
