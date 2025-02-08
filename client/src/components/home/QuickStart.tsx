@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 const INSTALLATION_STEPS = [
   {
     title: "Install RA.Aid",
-    code: "pip install ra-aid",
+    code: {
+      pip: "pip install ra-aid",
+      mac: `brew tap ai-christianson/homebrew-ra-aid
+brew install ra-aid`,
+    },
   },
   {
     title: "Set up API keys",
@@ -35,8 +39,38 @@ export default function QuickStart() {
           <TabsTrigger value="use">Use</TabsTrigger>
         </TabsList>
 
-        {INSTALLATION_STEPS.map((step, index) => (
-          <TabsContent key={index} value={["install", "configure", "use"][index]}>
+        <TabsContent value="install">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Card>
+              <CardContent className="pt-6">
+                <h3 className="text-lg font-semibold mb-4">{INSTALLATION_STEPS[0].title}</h3>
+                <Tabs defaultValue="pip" className="w-full">
+                  <TabsList className="w-full grid grid-cols-2 mb-4">
+                    <TabsTrigger value="pip">pip (Recommended)</TabsTrigger>
+                    <TabsTrigger value="mac">macOS</TabsTrigger>
+                  </TabsList>
+                  <TabsContent value="pip">
+                    <pre className="bg-secondary/50 p-4 rounded-lg overflow-x-auto">
+                      <code className="text-sm">{INSTALLATION_STEPS[0].code.pip}</code>
+                    </pre>
+                  </TabsContent>
+                  <TabsContent value="mac">
+                    <pre className="bg-secondary/50 p-4 rounded-lg overflow-x-auto">
+                      <code className="text-sm">{INSTALLATION_STEPS[0].code.mac}</code>
+                    </pre>
+                  </TabsContent>
+                </Tabs>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </TabsContent>
+
+        {INSTALLATION_STEPS.slice(1).map((step, index) => (
+          <TabsContent key={index + 1} value={["configure", "use"][index]}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
