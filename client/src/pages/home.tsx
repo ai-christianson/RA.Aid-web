@@ -112,7 +112,7 @@ export default function Home() {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <a
-                  href="https://discord.gg/your-invite"
+                  href="https://discord.gg/f6wYbzHYxV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary/20 hover:bg-primary/30 transition-colors"
