@@ -5,14 +5,12 @@ import * as random from 'maath/random/dist/maath-random.esm';
 
 function ParticleField() {
   const ref = useRef<any>();
-  // Reduced radius and increased number of points for better visibility
-  const sphere = random.inSphere(new Float32Array(2000), { radius: 1.2, radius0: 1 });
+  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.5 });
 
   useFrame((state, delta) => {
     if (ref.current) {
-      // Slowed down the rotation for smoother animation
-      ref.current.rotation.x -= delta / 15;
-      ref.current.rotation.y -= delta / 20;
+      ref.current.rotation.x -= delta / 10;
+      ref.current.rotation.y -= delta / 15;
     }
   });
 
@@ -27,10 +25,9 @@ function ParticleField() {
         <PointMaterial
           transparent
           color="#8b5cf6"
-          size={0.005} // Increased point size for better visibility
+          size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
-          opacity={0.8} // Added opacity for better visual effect
         />
       </Points>
     </group>
@@ -40,10 +37,7 @@ function ParticleField() {
 export default function AnimatedBackground() {
   return (
     <div className="absolute inset-0 -z-10">
-      <Canvas 
-        camera={{ position: [0, 0, 1], fov: 75 }}
-        style={{ background: 'transparent' }}
-      >
+      <Canvas camera={{ position: [0, 0, 1] }}>
         <ParticleField />
       </Canvas>
     </div>
