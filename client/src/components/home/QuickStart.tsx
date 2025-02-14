@@ -45,7 +45,7 @@ export default function QuickStart() {
           >
             <Card>
               <CardContent className="pt-6">
-                <h3 className="text-lg font-semibold mb-4">{INSTALLATION_STEPS[0].title}</h3>
+                <h3 className="text-lg font-semibold mb-2">{INSTALLATION_STEPS[0].title}</h3>
                 <Tabs defaultValue="pip" className="w-full">
                   <TabsList className="w-full grid grid-cols-2 mb-4">
                     <TabsTrigger value="pip">pip</TabsTrigger>
@@ -62,6 +62,12 @@ export default function QuickStart() {
                     </pre>
                   </TabsContent>
                 </Tabs>
+                <a 
+                  href="http://localhost:3000/quickstart/installation"
+                  className="block mt-4 text-base text-muted-foreground hover:text-primary transition-colors"
+                >
+                  View detailed installation guide
+                </a>
               </CardContent>
             </Card>
           </motion.div>
@@ -76,10 +82,22 @@ export default function QuickStart() {
             >
               <Card>
                 <CardContent className="pt-6">
-                  <h3 className="text-lg font-semibold mb-4">{step.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                   <pre className="bg-secondary/50 p-4 rounded-lg overflow-x-auto">
                     <code className="text-sm">{step.code}</code>
                   </pre>
+                  <a 
+                    href={index === 0 
+                      ? "http://localhost:3000/quickstart/recommended"
+                      : "http://localhost:3000/category/usage"
+                    }
+                    className="block mt-4 text-base text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {index === 0 
+                      ? "View recommended configuration"
+                      : "View usage documentation"
+                    }
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>

@@ -26,6 +26,14 @@ export default function Header() {
           <a href="#community" className="text-base hover:text-primary transition-colors">
             Community
           </a>
+          <a 
+            href="https://docs.ra-aid.ai" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base hover:text-primary transition-colors"
+          >
+            Documentation
+          </a>
         </nav>
 
         <div className="flex items-center gap-4">

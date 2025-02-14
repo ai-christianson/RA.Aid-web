@@ -25,7 +25,9 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="https://github.com/ai-christianson/RA.Aid"
+                  href="https://docs.ra-aid.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-base text-muted-foreground hover:text-primary"
                 >
                   Documentation
