@@ -63,7 +63,7 @@ export default function QuickStart() {
                   </TabsContent>
                 </Tabs>
                 <a 
-                  href="http://localhost:3000/quickstart/installation"
+                  href="https://docs.ra-aid.ai/quickstart/installation"
                   className="block mt-4 text-base text-muted-foreground hover:text-primary transition-colors"
                 >
                   View detailed installation guide
@@ -88,8 +88,8 @@ export default function QuickStart() {
                   </pre>
                   <a 
                     href={index === 0 
-                      ? "http://localhost:3000/quickstart/recommended"
-                      : "http://localhost:3000/category/usage"
+                      ? "https://docs.ra-aid.ai/quickstart/recommended"
+                      : "https://docs.ra-aid.ai/category/usage"
                     }
                     className="block mt-4 text-base text-muted-foreground hover:text-primary transition-colors"
                   >
